@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  src: url(../fonts/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  background-image: url(../img/Background.jpg);
+  background-position-x: 25%;
+
+}
+.header{
+  min-width: 210px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background-color: var(--vdarkblue, #0B0B0D);
+  backdrop-filter: blur(20px);
+  padding: 100px 0 105px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.header__logo {
+  display: block;
+  width: 115px;
+  height: 22px;
+  background-image: url(../img/Logo.png);
+  background-repeat: no-repeat;
+  margin-left: 46px;
+  position: absolute;
+  top: 35px;
+  background-size: cover;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+
+}
+
+.header__nav__link {
+  padding-left: 70px;
+  color: var(--FFF, #FFF);
+  font-family: Oswald;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__text {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Oswald;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 70px;
+  opacity: 0.25;
+  position: absolute;
+  bottom: 50px;
+}
+.main{
+  padding: 0 150px 0 100px;
+  position: absolute;
+  left: 210px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 894px;
+}
+.main__subtitle {
+  color: var(--FFF, #FFF);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104px; /* 185.714% */
+}
+.main__title {
+  color: var(--Yellow, #F2C94C);
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117px;
+  margin-bottom: 22px;
+}
+.main__text {
+  color: var(--FFF, #FFF);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155.187%; /* 45.004px */
+  width: 550px;
+  margin-bottom: 15px;
+}
+.main__btn {
+  width: 175px;
+  height: 35px;
+  border-radius: 17px;
+  border: 3px solid var(--Yellow, #F2C94C);
+  color: var(--FFF, #FFF);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #ffffff00;
+  margin-bottom: 46px;
+}
+.main__slides {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.main__slide {
+  width: 130px;
+  height: 77px;
+  border-radius: 11px;
+  border: 6px solid #F2C94C;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.main__slide:nth-child(1){ background-image: url(../img/img1.jpg);}
+.main__slide:nth-child(2){ background-image: url(../img/img2.jpg);}
+.main__slide:nth-child(3){ background-image: url(../img/img3.jpg);}
+.main__slide:nth-child(4){ background-image: url(../img/img4.jpg);}
+.main__news {
+  color: var(--FFF, #FFF);
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px; /* 238.095% */
+  background-image: url(../img/downNewsVector.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 110px;
+}
+.main__news__text {
+  color: var(--FFF, #FFF);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 165.688%; /* 26.51px */
+}
+.messenger{
+  width: 160px;
+  height: 40px;
+  border-radius: 0px 0px 10px 10px;
+  background: var(--Yellow, #F2C94C);
+  position: absolute;
+  top: 0;
+  right: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.messenger__link{
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+
+}
+.twitter{
+  background-image: url(../img/twit.svg);
+}
+.facebook{
+  background-image: url(../img/facebook\ 1.svg);
+}
